@@ -77,7 +77,7 @@ export default async function SemuaLaporan(props: { searchParams: Promise<{ [key
             </thead>
             <tbody>
               {reports.length > 0 ? (
-                reports.map((report) => (
+                reports.map((report: any) => (
                   <tr key={report.id}>
                     <td>{report.nomor_pengaduan}</td>
                     <td>{new Date(report.tanggal).toLocaleDateString("id-ID")}</td>

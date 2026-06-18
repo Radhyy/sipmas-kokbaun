@@ -134,7 +134,7 @@ export default async function AdminDashboard() {
           </thead>
           <tbody>
             {recentReports.length > 0 ? (
-              recentReports.map((report) => (
+              recentReports.map((report: any) => (
                 <tr key={report.id}>
                   <td>{report.nomor_pengaduan}</td>
                   <td>{report.nama}</td>
