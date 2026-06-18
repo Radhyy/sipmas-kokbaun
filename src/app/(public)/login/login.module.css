@@ -1,0 +1,112 @@
+.loginPage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 8rem);
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+  background-color: var(--background);
+  background-image: radial-gradient(circle at center, rgba(46, 125, 50, 0.05) 0%, rgba(255, 255, 255, 0) 70%);
+}
+
+.loginCard {
+  background: white;
+  border-radius: 20px;
+  padding: 3rem 2.5rem;
+  box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 450px;
+  border: 1px solid var(--border-color);
+  position: relative;
+  z-index: 10;
+}
+
+.loginHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.inputGroup label {
+  font-weight: 600;
+  color: #334155;
+  font-size: 0.95rem;
+}
+
+.input {
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all 0.2s;
+  background-color: #f8fafc;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.1);
+  background-color: white;
+}
+
+.errorAlert {
+  background-color: #fee2e2;
+  color: #991b1b;
+  padding: 0.85rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  border: 1px solid #fecaca;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.backLink {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.backLink a {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.backLink a:hover {
+  color: var(--primary-color);
+}
+
+@media (max-width: 480px) {
+  .loginCard {
+    padding: 2.5rem 1.5rem;
+  }
+}

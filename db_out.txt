@@ -1,0 +1,6 @@
+[
+  {
+    "id": 1,
+    "bukti_url": "https://i.ibb.co/5XbgT7Nb/db26d43c29e70f070444e6250adc27e6.jpg"
+  }
+]
