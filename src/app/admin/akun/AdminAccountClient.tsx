@@ -70,9 +70,9 @@ export default function AdminAccountClient({ admins, currentSessionUsername }: {
                     {admin.username.charAt(0).toUpperCase()}
                   </div>
                   <div>
-                    <div style={{ fontWeight: 600, color: '#0f172a', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    <div style={{ fontWeight: 600, color: '#0f172a', display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '0.5rem' }}>
                       {admin.username}
-                      {isCurrentUser && <span style={{ fontSize: '0.75rem', padding: '0.1rem 0.5rem', backgroundColor: '#e2e8f0', color: '#475569', borderRadius: '9999px', fontWeight: 500 }}>Anda (Sedang Login)</span>}
+                      {isCurrentUser && <span style={{ fontSize: '0.7rem', padding: '0.2rem 0.5rem', backgroundColor: '#e2e8f0', color: '#475569', borderRadius: '9999px', fontWeight: 600, whiteSpace: 'nowrap' }}>Anda</span>}
                     </div>
                     <div style={{ fontSize: '0.85rem', color: '#64748b' }}>Akses Penuh</div>
                   </div>
