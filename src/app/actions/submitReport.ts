@@ -50,6 +50,29 @@ export async function submitReport(prevState: any, formData: FormData) {
       )
     `;
 
+    // Ambil daftar email notifikasi
+    try {
+      const emailResult = await sql`SELECT email FROM notification_emails`;
+      const emailList = emailResult.map(row => row.email);
+      
+      if (emailList.length > 0) {
+        // Import mailer secara dinamis agar tidak memperlambat form
+        const { sendNotificationEmails } = await import("../../lib/mailer");
+        
+        // Kirim asinkron tanpa await agar tidak nge-block form submit pengguna
+        sendNotificationEmails(emailList, {
+          nomorPengaduan,
+          nama,
+          kategori,
+          lokasi,
+          uraian,
+          tanggal: new Date().toLocaleDateString("id-ID", { day: 'numeric', month: 'long', year: 'numeric' })
+        }).catch(err => console.error("Async email error:", err));
+      }
+    } catch (emailErr) {
+      console.error("Gagal mengambil daftar email notifikasi:", emailErr);
+    }
+
     revalidatePath("/lapor");
     return { success: true, message: `Laporan berhasil dikirim!`, nomor_pengaduan: nomorPengaduan };
 
