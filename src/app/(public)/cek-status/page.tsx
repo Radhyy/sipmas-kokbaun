@@ -5,7 +5,7 @@ import CekStatusForm from "./CekStatusForm";
 
 export const metadata = {
   title: "Cek Status Laporan | SIPMAS KOKBAUN",
-  description: "Lacak status penanganan laporan pengaduan masyarakat Desa Kokbaun.",
+  description: "Lacak status penanganan laporan pengaduan masyarakat Kecamatan Kokbaun.",
 };
 
 export default async function CekStatusPage(props: { searchParams: Promise<{ nomor?: string }> }) {

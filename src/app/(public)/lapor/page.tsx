@@ -2,7 +2,7 @@ import FormPengaduan from "./FormPengaduan";
 
 export const metadata = {
   title: "Buat Laporan | SIPMAS KOKBAUN",
-  description: "Kirim pengaduan, laporan kerusakan, atau aspirasi Anda di Desa Kokbaun.",
+  description: "Kirim pengaduan, laporan kerusakan, atau aspirasi Anda di Kecamatan Kokbaun.",
 };
 
 export default function LaporPage() {

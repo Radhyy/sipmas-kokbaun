@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "SIPMAS KOKBAUN | Sistem Pengaduan Masyarakat",
-  description: "Layanan Pengaduan Masyarakat Online untuk Desa Kokbaun, Timor Tengah Selatan.",
+  description: "Layanan Pengaduan Masyarakat Online untuk Kecamatan Kokbaun, Timor Tengah Selatan.",
 };
 
 export default function RootLayout({

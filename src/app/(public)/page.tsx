@@ -15,10 +15,10 @@ export default function Home() {
         
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>
-            Layanan <span>Pengaduan Masyarakat</span> Desa Kokbaun
+            Layanan <span>Pengaduan Masyarakat</span> Kecamatan Kokbaun
           </h1>
           <p className={styles.heroDescription}>
-            Sampaikan laporan, keluhan, dan aspirasi Anda dengan mudah, aman, dan transparan melalui Sistem Pengaduan Masyarakat (SIPMAS) Desa Kokbaun, Kabupaten Timor Tengah Selatan.
+            Sampaikan laporan, keluhan, dan aspirasi Anda dengan mudah, aman, dan transparan melalui Sistem Pengaduan Masyarakat (SIPMAS) Kecamatan Kokbaun, Kabupaten Timor Tengah Selatan.
           </p>
           <div className={styles.heroButtons}>
             <Link href="/lapor" className="btn btn-primary">
@@ -52,7 +52,7 @@ export default function Home() {
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
               </div>
               <h3 className={styles.featureTitle}>2. Proses Verifikasi</h3>
-              <p className={styles.featureDesc}>Laporan Anda akan diverifikasi oleh pihak berwenang di Desa Kokbaun untuk ditindaklanjuti.</p>
+              <p className={styles.featureDesc}>Laporan Anda akan diverifikasi oleh pihak berwenang di Kecamatan Kokbaun untuk ditindaklanjuti.</p>
             </div>
 
             <div className={styles.featureCard}>

@@ -127,7 +127,7 @@ export default function FormPengaduan() {
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
             </div>
             <h3 className={styles.modalTitle}>Laporan Berhasil Terkirim!</h3>
-            <p style={{ color: '#475569', fontSize: '0.95rem' }}>Terima kasih telah berpartisipasi untuk memajukan Desa Kokbaun.</p>
+            <p style={{ color: '#475569', fontSize: '0.95rem' }}>Terima kasih telah berpartisipasi untuk memajukan Kecamatan Kokbaun.</p>
             
             <div className={styles.modalWarning}>
               <strong>PENTING:</strong> Harap simpan Nomor Pengaduan di bawah ini. Anda akan membutuhkannya untuk mengecek status tindak lanjut laporan Anda nantinya.
